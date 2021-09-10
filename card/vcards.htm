@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+        
+        html {
+            font-size: 16px;
+        }
+        
+        body {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+        
+        .main-ctn {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: url("layered-waves.png");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        .grid-ctn {
+            height: 50%;
+            width: 98%;
+            border-radius: 10px;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: 1fr;
+            grid-gap: 50px;
+            padding: 25px 50px;
+            align-self: center;
+            justify-self: center;
+            /* background: rgb(117, 159, 238); */
+        }
+        
+        .card {
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+            background: white;
+            border: 5px dashed #759fee;
+        }
+        
+        @media (max-width: 720px) {
+            .grid-ctn {
+                height: 40%;
+                width: 90%;
+                grid-gap: 15px;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-ctn">
+        <div class="grid-ctn">
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+        </div>
+    </div>
+</body>
+
+</html>
